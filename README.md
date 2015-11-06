@@ -1,3 +1,15 @@
+#### http://127.0.0.1:4242
+```sh
+ps -ax | grep opentsdb
+kill -9 (PID)
+cd /usr/local/data/hbase-1.1.2/bin/
+./stop-hbase.sh
+source /etc/profile
+./start-hbase.sh
+cd /usr/local/opentsdb/
+./build/tsdb tsd --port=4242 --staticroot=build/staticroot --cachedir=/usr/local/data --auto-metric
+```
+
 #### 연습 1
 
 ```sh
