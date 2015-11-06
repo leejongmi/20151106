@@ -8,6 +8,9 @@ source /etc/profile
 ./start-hbase.sh
 cd /usr/local/opentsdb/
 ./build/tsdb tsd --port=4242 --staticroot=build/staticroot --cachedir=/usr/local/data --auto-metric
+
+# 웹브라우저에서 확인
+http://127.0.0.1:4242
 ```
 
 #### 연습 1
